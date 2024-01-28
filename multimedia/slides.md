@@ -24,7 +24,7 @@
 
 # Principle 1
 
-## Images are helpful
+## Use both words and images
 
-{{Principle 1: Images and words together are good.}}
-{{We learn better from images and words together, than we do from images alone, or from words alone.}}
+{{Principle 1: Use both words and images.}}
+{{We learn better from words and images and words together, than we do from words alone, or from images alone.}}
