@@ -27,4 +27,4 @@
 ## Images are helpful
 
 {{Principle 1: Images and words together are good.}}
-{{We learn better from images and words together, then from images alone, or from words alone.}}
+{{We learn better from images and words together, than we do from images alone, or from words alone.}}
