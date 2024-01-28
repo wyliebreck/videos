@@ -12,18 +12,11 @@
 
 # How our brains work
 
-{{To make your presence felt, there are three key things you can do.}}
+{{It helps to know a bit about how our brains work.}}
 
-1. Announce weekly
-  {{One. Announce weekly}}
+<img src="diagram.png">
 
-2. Respond quickly
-  {{Two. Respond quickly}}
-
-3. Have webinars
-  {{Three. Have webinars}}
-
-{{We'll consider each of these in turn.}}
+{{Here's a diagram that explains it.}}
 
 [>]
 
