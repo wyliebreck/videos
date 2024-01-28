@@ -27,4 +27,4 @@
 ## Use both words and images
 
 {{Principle 1: Use both words and images.}}
-{{We learn better from words and images and words together, than we do from words alone, or from images alone.}}
+{{We learn better from words and images together, than we do from words alone, or from images alone.}}
