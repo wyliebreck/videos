@@ -20,3 +20,10 @@
 
 [>]
 
+---
+
+# Principle 1
+
+## Images are helpful
+
+{{We learn better if we add images to our words.}}
