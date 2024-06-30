@@ -1,7 +1,7 @@
 # Teacher presence<br>in UNSW Online courses
 
 {{Hi. Thanks for coming, to our session about teacher presence in UNSW Online courses.}}
-{{We'll be sharing what we've learned about teacher presence over the past three years, since we launched our first fully-online programs.}}
+{{We'll be sharing what we've learned about teacher presence, since we launched our first fully-online programs in 2019.}}
 
 ---
 
