@@ -1,5 +1,6 @@
 # Designing multimedia learning material
 
+{{}}
 {{This video is about designing multimedia learning material.}}
 {{Much of the learning material that we make, consists mostly of words.}}
 {{But a large amount of research over the past 30 years, has shown that learning material is more effective if we use images as well, images that illustrate what our words are saying.}}
