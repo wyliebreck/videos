@@ -136,14 +136,16 @@ Working memory
 {{We learn better from words and images, than from words alone}}
 
 <table class="demo"><tr>
+  {{Here's some material that uses just words.}}
   <td style="width:33%">
     Chad is in central Africa, just above the equator
-    {{Here's some material that uses just words.}}
+    {{}}
   </td>
+  {{Here's the same material, with an image as well.}}
   <td style="width:33%">
     <img src="chad.png"><br>
     Chad is in central Africa, just above the equator
-    {{Here's the same material, with an image as well.}}
+    {{}}
     {{It's easier to learn from the material when it has the image.}}
     {{Not just any image will do - it needs to illustrate what the words are saying.}}
   </td>
