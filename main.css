@@ -1,0 +1,235 @@
+:root {
+  --controls-height: 50px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 16pt;
+}
+img {
+  width: 100%;
+}
+li {
+  margin-left: 0;
+  padding-left: 0;
+  text-align: left;
+}
+ul,
+ol {
+  display: inline-block;
+  margin: 0.5em auto;
+}
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+  display: inline-block;
+  margin: 0 auto 0 1em;
+}
+.hidden {
+  display: none;
+}
+.script {
+  display: none;
+}
+.slide button {
+  display: inline-block;
+  margin: 0 auto;
+}
+.slide div {
+  box-sizing: border-box;
+}
+.slide p {
+  margin: 1em auto 0 auto;
+  max-width: 40em;
+}
+.slide .wait {
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+  padding: 0.5em;
+}
+.slide :first-child {
+  margin-top: 0;
+}
+.slide :last-child {
+  margin-bottom: 0;
+}
+#caption {
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 1em;
+  bottom: calc(var(--controls-height) + 20px);
+  color: white;
+  font-size: 100%;
+  left: 25%;
+  margin: 0 auto;
+  padding: 1em;
+  position: fixed;
+  right: 25%;
+  text-align: center;
+  visibility: hidden;
+  z-index: 2;
+}
+#caption:empty {
+  display: none;
+}
+#controls {
+  background-color: rgba(0, 0, 0, 0.75);
+  bottom: 0;
+  height: var(--controls-height);
+  left: 0;
+  line-height: var(--controls-height);
+  position: fixed;
+  right: 0;
+  vertical-align: middle;
+}
+#controls button {
+  background-color: transparent;
+  border: none;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: calc(0.7 * var(--controls-height));
+  height: 100%;
+  vertical-align: top;
+  width: var(--controls-height);
+}
+#controls select {
+  display: inline-block;
+  vertical-align: middle;
+}
+#positions {
+  box-sizing: border-box;
+  display: inline-block;
+  height: 100%;
+  position: relative;
+  top: -1.5px;
+  vertical-align: top;
+  width: calc(100vw - 40em);
+  white-space: nowrap;
+}
+#positions div {
+  background-color: white;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  height: 50%;
+  vertical-align: middle;
+}
+#positions div.done {
+  background-color: gray;
+}
+#preview {
+  background-color: white;
+  border: thin lightgray solid;
+  bottom: calc(var(--controls-height) + 10px);
+  font-size: 25%;
+  height: 25vh;
+  position: fixed;
+  width: 25vw;
+  z-index: 10;
+}
+.slide {
+  display: inline-block;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  padding: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+@media screen {
+  #slides {
+    background-color: white;
+    bottom: var(--controls-height);
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    overflow: auto;
+    text-align: center;
+  }
+  #slides * {
+    visibility: hidden;
+  }
+  #slides .container {
+    display: none;
+  }
+  #slides .selected {
+    display: block;
+    border: medium red solid;
+  }
+}
+@media print {
+	@page {size: A4; margin: 10mm}
+	html, body {width: 210mm; height: 297mm}
+  body {
+    font-size: 14pt;
+  }
+  button.wait {
+    display: none;
+  }
+  .scriptDiv {
+    display: inline-block;
+    text-align: left;
+    top: 50%;
+    left: 50%;
+    padding: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 90%;
+  }
+  .scriptDiv .script {
+    display: block;
+    font-size: 80%;
+  }
+  .scriptDiv .script + .script {
+    margin-top: 0;
+  }
+  #controls {
+    display: none;
+  }
+  #preview {
+    display: none;
+  }
+  #slides {
+    /*align-items: flex-start;*/
+    /*border: thin blue solid;*/
+    box-sizing: border-box;
+    /*display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;*/
+    /*grid-template-columns: auto auto;*/
+    /*column-count: 2;*/
+    /*column-fill: balance;*/
+    position: relative;
+    /*width: 100%;*/
+  }
+  #slides .container {
+    background-color: white;
+    border: medium gray solid;
+    border-radius: 1em;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 45%;
+    height: 76mm;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    /*break-before: avoid;*/
+    vertical-align: middle;
+    width: 50%;
+    /*flex-basis: 9.4cm;*/
+  }
+  #slides .container:nth-of-type(8n+9) {
+    break-before: page;
+    /*border: medium red solid;*/
+  }
+}

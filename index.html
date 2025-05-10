@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+	<head>
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Voiceover</title>
+		<base href="">
+    <link rel="stylesheet" href="main.css">
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.css" crossorigin="anonymous">
+    <script async src="main.js"></script>
+    <script async src="https://wylieb.com/apps/1/boxall/main.js"></script>
+    <script async src="https://code.highcharts.com/highcharts.js"></script>
+    <script async src="https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/contrib/auto-render.min.js"></script>
+	</head>
+	<body>
+  	<div id="slides"></div>
+  	<div id="caption"></div>
+  	<div id="preview" class="container hidden"></div>
+  	<div id="controls">
+    	<button id="previous" onclick="App.goPrevious()" class="material-icons">keyboard_arrow_left</button>
+    	<div id="positions" onclick="App.showItem(event.target)"></div>
+    	<button id="play" onclick="App.resume()" class="material-icons">play_arrow</button>
+    	<button id="next" onclick="App.goNext(false)" class="material-icons">keyboard_arrow_right</button>
+    	<button id="next" onclick="App.goNext(true)" class="material-icons">read_more</button>
+    	<input  id="auto" type="checkbox"/>
+    	<button id="refresh" onclick="App.refresh()" class="material-icons">refresh</button>
+    	<button id="captions" onclick="App.toggleCaptions()" class="material-icons">subtitles</button>
+    	<button id="mode" onclick="App.toggleMode()" class="material-icons">mic_none</button>
+    	<button id="print" onclick="window.print()" class="material-icons">print</button>
+    	<button id="share" onclick="App.share()" class="material-icons">share</button>
+    	<select id="voice" onchange="App.saveSettings()"></select>
+    	<select id="rate" onchange="App.saveSettings()"></select>
+    	<select id="gap" onchange="App.saveSettings()"></select>
+  	</div>
+  </body>
+</html>
