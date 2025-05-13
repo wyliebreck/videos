@@ -13,7 +13,7 @@ window.addEventListener("load", async () => {
 window.addEventListener("beforeunload", () => {App.scriptWindow.close()});
 App.setKeys = function() {
 	document.addEventListener("keydown", function(e) {
-		if (e.key === "ArrowRight") App.goNext();
+		if (e.key === "ArrowRight") App.goNext(e.shiftKey);
 		if (e.key === "ArrowLeft") App.goPrevious();
 	});
 };
